@@ -24,6 +24,8 @@ impl Faretable {
             }
         }
 
+        //ここ、input_nの変数名をを「n」、matrix_2dを「matrix」にしておけば、
+        //Faretable {n, matrix}で返り値が通る
         Faretable { n: (input_n), matrix: (matrix_2d) }
     }
 
