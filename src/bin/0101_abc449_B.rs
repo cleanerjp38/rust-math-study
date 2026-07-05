@@ -41,7 +41,7 @@ fn get_query() -> Chocolate {
 
 impl Chocolate {
     fn is_eaten(&self) {
-        //----ここからはAIにおそわりつつ書いた----
+        //----ここからはAIに教わりつつ書いた----
         let mut current_h = self.h;
         let mut current_w = self.w;
 
