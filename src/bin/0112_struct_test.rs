@@ -15,6 +15,7 @@ impl HairetsuTest {
         Self { meibo:Vec::new() }
     }
 
+    //meiboの中に構造体を入れていく
     fn add_student(&mut self, student: Student) {
         self.meibo.push(student);
     }
@@ -37,7 +38,9 @@ fn main() {
     my_test.add_student(student2);
     println!("生徒数:{}",my_test.meibo.len());
     
+    //for構文で、meiboの中にある構造体を参照できる
     for i in &my_test.meibo {
         println!("{}, {}", i.id, i.name);
     }
 }
+//0112_struct_test
