@@ -90,7 +90,7 @@ fn merge_sorted_arrays(a: &[i32], b: &[i32]) -> Vec<i32> {
 
     // 1. 両方の配列に要素が残っている間、小さい方を result に push していく
     // （ここに 1つ目の while ループを書く）
-    while i < a.len() && i < b.len() {
+    while i < a.len() && j < b.len() {
         if a[i] < b[j] {
             result.push(a[i]);
             i += 1;
@@ -110,6 +110,7 @@ fn merge_sorted_arrays(a: &[i32], b: &[i32]) -> Vec<i32> {
     // （ここに 2つ目の while ループを書く）
     while i < a.len() {
         result.push(a[i]);
+        i += 1;
     }
 
 
